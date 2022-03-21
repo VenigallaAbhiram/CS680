@@ -1,0 +1,51 @@
+package edu.umb.cs680.hw04;
+
+import java.nio.file.Path;
+import java.io.IOException;
+import java.nio.file.*;
+import java.util.LinkedHashMap;
+
+public class FIFOFileCache extends FileCache{
+	private final int cachesize;
+	public FIFOFileCache(final int cachesize) {
+		this.cachesize = cachesize;
+		cache = new LinkedHashMap<>();
+	}
+	
+	@Override
+	protected boolean isCached(Path path) {
+		Boolean decision = cache.containsKey(path);
+		return decision;
+	}
+
+	@Override
+	protected boolean isCacheFull() {
+		Boolean descision = cache.size()==cachesize;
+		return descision;
+	}
+
+	@Override
+	protected void cacheFile(Path path) {
+		try {
+			String content = Files.readString(path);
+			cache.put(path, content);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	@Override
+	protected void replace(Path path) {
+		try {
+			String content = Files.readString(path);
+			Path removeKey = cache.keySet().iterator().next();
+			cache.remove(removeKey);
+			cache.put(path, content);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	}
+
