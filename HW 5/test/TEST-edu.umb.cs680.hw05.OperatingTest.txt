@@ -1,0 +1,13 @@
+Testcase: edu.umb.cs680.hw05.OperatingTest
+Test: startButtonPushedTest() took 38 milli sec(s)
+Test: stopButtonPushedTest() took 1 milli sec(s)
+Test: motionNotDetectedTest() took 2 milli sec(s)
+Test: motionDetectedTest() took 1 milli sec(s)
+Test: getInstanceReturnIdenticalInstance() took 0 milli sec(s)
+Tests run: 5, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 62 milli sec(s)
+------------- Standard Output ---------------
+The steps are going to be stopped!
+The sensor is going to be disabled!
+The steps are going to be stopped!
+The steps are going to move!
+------------- ---------------- ---------------
