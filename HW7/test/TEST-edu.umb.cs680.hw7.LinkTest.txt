@@ -1,0 +1,6 @@
+Testcase: edu.umb.cs680.hw7.LinkTest
+Test: verifyLinks() took 2 milli sec(s)
+Test: checkdirectory() took 1 milli sec(s)
+Test: checkxlink() took 3 milli sec(s)
+Test: checkylink() took 1 milli sec(s)
+Tests run: 4, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 11 milli sec(s)
