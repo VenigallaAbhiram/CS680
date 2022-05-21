@@ -1,0 +1,5 @@
+Testcase: edu.umb.cs680.HW09.AfpsCountingVisitorTest
+Test: verifyingVisitorCode() took 32 milli sec(s)
+Test: verifyingVisitorHome() took 1 milli sec(s)
+Test: verifyingVisitorRoot() took 0 milli sec(s)
+Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 52 milli sec(s)
