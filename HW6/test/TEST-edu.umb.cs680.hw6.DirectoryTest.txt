@@ -1,0 +1,7 @@
+Testcase: edu.umb.cs680.hw6.DirectoryTest
+Test: testsize_Home() took 25 milli sec(s)
+Test: testsize_Root() took 0 milli sec(s)
+Test: checkDirectory_Home() took 2 milli sec(s)
+Test: checkDirectory_Root() took 1 milli sec(s)
+Test: checkDirectoryandFiles() took 2 milli sec(s)
+Tests run: 5, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 54 milli sec(s)
